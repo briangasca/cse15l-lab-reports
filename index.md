@@ -25,5 +25,7 @@ i = 0
 print(i)
 ```
 
+![Image](https://i.pinimg.com/564x/47/56/4b/47564b00412ef9b869b7209612feafc5.jpg)
+
 ## End
 > This code is on `index.md`
