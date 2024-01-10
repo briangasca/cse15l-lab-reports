@@ -2,9 +2,11 @@
 
 The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with their own functions.
 
+***
+
 # Using `cd`
 
-**No Arguements**
+**No Arguments**
 > Using `cd` without arguments doesn't change the directory at all at first
 > 
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.11.06%20PM.png)
@@ -26,5 +28,31 @@ The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with the
 > 
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.28.18%20PM.png)
 
+***
 
 # Using `ls`
+
+**No Arguments**
+>Using `ls` without arguments returns the files, or directories you can `cd` toward, that you have access to within the current directory you are in
+>
+>![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.36.02%20PM.png)
+>
+**Path to Directory**
+> Using `ls` with a directory as the argument will show you the files/directories that the directory specified has access to.
+>
+> ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.39.24%20PM.png)
+>
+> However, it has restrictions, as you cannot use `ls` on a directory that you currently do not have access to in the current directory the terminal is located in.
+>
+> ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.39.42%20PM.png)
+>
+**Path to File**
+>Using `ls` with a file as the argument will just return you the file name you already specified.
+>
+>![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.40.20%20PM.png)
+
+***
+
+# Using `cat`
+
+**No Arguments**
