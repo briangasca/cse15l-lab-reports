@@ -25,6 +25,9 @@ por [Brian Gasca](https://github.com/briangasca)
 > print(i)
 > ```
 
+Yo:
+![Image](https://i.pinimg.com/564x/47/56/4b/47564b00412ef9b869b7209612feafc5.jpg)
+
 ## Fin
 
 > Este codigo se puede encontrar en `index-spanish.md`
