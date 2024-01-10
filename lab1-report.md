@@ -56,3 +56,19 @@ The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with the
 # Using `cat`
 
 **No Arguments**
+>Using `cat` without arguments will result in you being able to type whatever and then the terminal returning exactly what you typed
+>
+>![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.45.51%20PM.png)
+>
+**Path to Directory**
+>Using `cat` on a directory results in an error being returned because you cannot use `cat` on a directory.
+>
+>![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.47.06%20PM.png)
+>
+**Path to File**
+>Using `cat` on a file results in it returning what's inside that file. You can also use it on two separate files to return what they both contain.
+>
+>![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.47.52%20PM.png)
+>
+
+
