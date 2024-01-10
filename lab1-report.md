@@ -2,7 +2,7 @@
 
 by Brian Gasca
 
-**
+***
 
 The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with their own functions.
 
