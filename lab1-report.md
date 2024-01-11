@@ -42,6 +42,7 @@ The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with the
 >![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.36.02%20PM.png)
 >
 **Path to Directory**
+
 > Using `ls` with a directory as the argument will show you the files/directories that the directory specified has access to.
 >
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.39.24%20PM.png)
