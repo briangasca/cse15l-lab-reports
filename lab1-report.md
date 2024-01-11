@@ -11,6 +11,7 @@ The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with the
 # Using `cd`
 
 **No Arguments**
+
 > Using `cd` without arguments doesn't change the directory at all, since you are already at the `/home/` directory.
 > 
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.11.06%20PM.png)
@@ -18,15 +19,18 @@ The terminal has a lot of commands, 3 being `cd`, `ls`, and `cat`, each with the
 > However, if you are in another directory that is not home, i.e `/home/lecture1`, `cd` resets your current directory to the `/home/` directory.
 > 
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.19.39%20PM.png)
-> 
+>
+
 **Path to Directory**
 
 > Using `cd` with a directory argument changes where the terminal is looking, now it's looking within the directory you gave.
 > Now you are able to access files within that directory
 > 
 > ![Image](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-10%20at%203.22.59%20PM.png)
-> 
+>
+
 **Path to File**
+
 > 
 > Using `cd` with a file argument does not work and returns an error since `cd` can only work on directories.
 > 
