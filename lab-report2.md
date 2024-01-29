@@ -15,11 +15,11 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // Instance variables
-    String user;
-    String message;
-    String[][] stored = new String[100][100];
-    int stored_count = 0;
+    // Fields
+    String user; //user to be changed later
+    String message; //message to be changed later
+    String[][] stored = new String[100][100]; //Create 2d array with a good amount of space.
+    int stored_count = 0; //keeps track of items in stored field
 
     public String handleRequest(URI url) {
         String path = url.getPath();
