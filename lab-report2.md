@@ -109,5 +109,31 @@ meaning it's just taking the url as a parameter, which in this case is `http://l
 
 ![add-message2](https://github.com/briangasca/cse15l-lab-reports/blob/main/images/Screenshot%202024-01-28%20at%2010.12.50%20PM.png?raw=true)
 
-##Part 2
+## Part 2
 ---
+
+**Private Key**
+Using `cd`, I find the directory in where my private ssh key is located. I go to the `.ssh` file and use `ls` to see if my private key is there, and it is.
+Using `pwd`, I'm able to get the absolute path in where this file is located, so the absolute path is `/Users/briangasca/.ssh/`
+
+![private-key-location](https://github.com/briangasca/cse15l-lab-reports/blob/main/images/Screenshot%202024-01-28%20at%2010.49.54%20PM.png?raw=true)
+
+**Public Key**
+Connecting to the `ieng6` server, I `cd` into the `.ssh` directory that is located there, then `ls` to find the keys. There are two files, `authorized_keys` and
+`known_hosts`. I'm pretty certain `authorized_keys` is a file containing all the keys that are authorized, however I cannot `cd` to it because it's not a directory.
+
+![public-key-location](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2011.01.43%20PM.png)
+
+**Terminal Interaction**
+In this image, I am able to connect to the `ieng6` server without a password! All I have to type is `ssh bgasca@ieng6.ucsd.edu` and I am not prompted
+with any password request, instead it just connects  me.
+
+![terminal-interaction](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2011.04.34%20PM.png)
+
+## Part 3
+---
+**What I Learned**
+I learned a good amount of concepts from this lab, for example it was quite a challenge for me to implement the `ChatServer` logic because I didn't know
+too much about the `.split()` method that I could use to parse strings. After I learned about it more, it became easier to implement. I also learned that
+`mkdir` is a command that will create a directory for you and `scp` can be used to copy files locally to remote servers. I imagine `scp` will be very useful
+down the line as we interact with our `ieng6` servers more.
