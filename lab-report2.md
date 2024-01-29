@@ -6,7 +6,7 @@ by Brian Gasca
 
 The webserver called `ChatServer` can take in requests and output them in a way that it would be like chatting in a chatbox.
 You use the url path `/add-message?s=<string>&user=<string>` to add messages, replacing `<string>` with your own
- words of choice.
+words of choice.
 
 
 **Code**
@@ -70,11 +70,12 @@ class ChatServer {
 ---
 **1st Example**
 ---
-After using the path `http://localhost:4050/add-message?s=hello!&user=bgasca`, this is what the webpage displayed:
+After using the url `http://localhost:4050/add-message?s=hello!&user=bgasca`, this is what the webpage displayed:
 * The method that was called was the `handleRequest` method from the `Handler` class. 
 * The `main` method was also used to start the server earlier. `handleRequest` takes an argument `url` of the `URI` class,
 meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=hello!&user=bgasca`.
 * Many fields were changed:
+- `path` is defined as `/add-message?s=hello!&user=bgasca`
 - `user` was changed to `bgasca`, 
 - `message` was changed to `hello`, 
 - `stored[0][0]` was changed to reference `user`
@@ -87,16 +88,19 @@ meaning it's just taking the url as a parameter, which in this case is `http://l
   
 ![add-message1](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2010.12.00%20PM.png)
 
+---
 **2nd Example**
-After using a different path, `http://localhost:4050/add-message?s=good evening!&user=jpolitz`, this is what the webpage displayed:
+---
+After using a different url, `http://localhost:4050/add-message?s=good evening!&user=jpolitz`, this is what the webpage displayed:
 * The method that was called was the `handleRequest` method from the `Handler` class.
 * The `main` method was also used to start the server earlier. Much like earlier, `handleRequest` takes an argument `url` of the `URI` class,
 meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=good evening!&user=jpolitz`.
 * Many fields were changed again:
+- `path` is defined as `/add-message?s=good evening!&user=jpolitz`
 - `user` was changed to `jpolitz`, 
 - `message` was changed to `good evening`, 
-- `stored[0][0]` was changed to reference `user`
-- `stored[0][1]` was changed to reference `message`
+- `stored[1][0]` was changed to reference `user`
+- `stored[1][1]` was changed to reference `message`
 - `stored_count` was incremented from `1` to `2`
 - `return_string` changed from `"bgasca : hello\n"` to `"bgasca : hello\njpolitz : good evening\n"`
 - `query` is defined as `s=good evening!&user=jpolitz`
@@ -104,3 +108,6 @@ meaning it's just taking the url as a parameter, which in this case is `http://l
 - `sub_parse` is defined as `["good evening!,user]`
 
 ![add-message2](https://github.com/briangasca/cse15l-lab-reports/blob/main/images/Screenshot%202024-01-28%20at%2010.12.50%20PM.png?raw=true)
+
+##Part 2
+---
