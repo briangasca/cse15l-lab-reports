@@ -68,18 +68,39 @@ class ChatServer {
 
 **Using `add-message`**
 ---
-
-After using the path given in the URL, this is what the webpage displayed! 
-* The method that was called was the `handleRequest` method from
-the `Handler` class. 
+**1st Example**
+---
+After using the path `http://localhost:4050/add-message?s=hello!&user=bgasca`, this is what the webpage displayed:
+* The method that was called was the `handleRequest` method from the `Handler` class. 
 * The `main` method was also used to start the server earlier. `handleRequest` takes an argument `url` of the `URI` class,
-meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=hello&user=bgasca`.
+meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=hello!&user=bgasca`.
 * Many fields were changed:
 - `user` was changed to `bgasca`, 
 - `message` was changed to `hello`, 
 - `stored[0][0]` was changed to reference `user`
 - `stored[0][1]` was changed to reference `message`
 - `stored_count` was incremented from `0` to `1`
-- `return_string` changed from `""` to `"bgasca : hello"`
+- `return_string` changed from `""` to `"bgasca : hello\n"`
+- `query` is defined as `s=hello!&user=bgasca`
+- `parse` is defined as `["s","hello!&user","bgasca"]`
+- `sub_parse` is defined as `["hello!,user]`
   
 ![add-message1](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2010.12.00%20PM.png)
+
+**2nd Example**
+After using a different path, `http://localhost:4050/add-message?s=good evening!&user=jpolitz`, this is what the webpage displayed:
+* The method that was called was the `handleRequest` method from the `Handler` class.
+* The `main` method was also used to start the server earlier. Much like earlier, `handleRequest` takes an argument `url` of the `URI` class,
+meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=good evening!&user=jpolitz`.
+* Many fields were changed again:
+- `user` was changed to `jpolitz`, 
+- `message` was changed to `good evening`, 
+- `stored[0][0]` was changed to reference `user`
+- `stored[0][1]` was changed to reference `message`
+- `stored_count` was incremented from `1` to `2`
+- `return_string` changed from `"bgasca : hello\n"` to `"bgasca : hello\njpolitz : good evening\n"`
+- `query` is defined as `s=good evening!&user=jpolitz`
+- `parse` is defined as `["s","good evening!&user","jpolitz"]`
+- `sub_parse` is defined as `["good evening!,user]`
+
+![add-message2](https://github.com/briangasca/cse15l-lab-reports/blob/main/images/Screenshot%202024-01-28%20at%2010.12.50%20PM.png?raw=true)
