@@ -4,12 +4,14 @@ by Brian Gasca
 # Part 1
 ---
 
-> The webserver called `ChatServer` can take in requests and output them in a way that it would be like chatting in a chatbox.
-> You use the url path `/add-message?s=<string>&user=<string>` to add messages, replacing `<string>` with your own
-> words of choice.
->
+The webserver called `ChatServer` can take in requests and output them in a way that it would be like chatting in a chatbox.
+You use the url path `/add-message?s=<string>&user=<string>` to add messages, replacing `<string>` with your own
+ words of choice.
+
+
 **Code**
 ---
+
 ```Java
 import java.io.IOException;
 import java.net.URI;
@@ -66,3 +68,18 @@ class ChatServer {
 
 **Using `add-message`**
 ---
+
+After using the path given in the URL, this is what the webpage displayed! 
+* The method that was called was the `handleRequest` method from
+the `Handler` class. 
+* The `main` method was also used to start the server earlier. `handleRequest` takes an argument `url` of the `URI` class,
+meaning it's just taking the url as a parameter, which in this case is `http://localhost:4050/add-message?s=hello&user=bgasca`.
+* Many fields were changed:
+- `user` was changed to `bgasca`, 
+- `message` was changed to `hello`, 
+- `stored[0][0]` was changed to reference `user`
+- `stored[0][1]` was changed to reference `message`
+- `stored_count` was incremented from `0` to `1`
+- `return_string` changed from `""` to `"bgasca : hello"`
+  
+![add-message1](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2010.12.00%20PM.png)
