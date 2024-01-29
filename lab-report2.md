@@ -123,8 +123,10 @@ Using `pwd`, I'm able to get the absolute path in where this file is located, so
 
 Connecting to the `ieng6` server, I `cd` into the `.ssh` directory that is located there, then `ls` to find the keys. There are two files, `authorized_keys` and
 `known_hosts`. I'm pretty certain `authorized_keys` is a file containing all the keys that are authorized, however I cannot `cd` to it because it's not a directory.
+Using `pwd`, I can find that the absolute path for the public ssh keys on the `ieng6` server is `/home/linux/ieng6/oce/9f/bgasca/.ssh`.
 
 ![public-key-location](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2011.01.43%20PM.png)
+![public-key-location2](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-01-28%20at%2011.12.09%20PM.png)
 
 **Terminal Interaction**
 
