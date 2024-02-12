@@ -87,14 +87,9 @@ Here, we are making an array `newArray` have a starting value of the ending elem
 ## Part 2
 ---
 
-For part 2, I chose the `grep` command.
+* For part 2, I chose the `grep` command.
 
 * For the sake of simplicity, I have used `cd` to get into the `technical/` directory, so if I don't include the `technical/` directory in my responses, this is because it is assumed we are already inside it.
-
-grep -r
-grep -l
-grep -L
-
 
 `grep -c`
 ---
@@ -129,6 +124,7 @@ plos/pmed.0020272.txt:40
 
 * Here we can see, it returns the file and the amount of times "the" was found in the format `file : count`
 
+
 `grep -r`
 ---
 
@@ -156,6 +152,7 @@ plos/pmed.0020281.txt:        PLoS Medicine —that involves the pharmaceutical 
 plos/pmed.0020281.txt:        benefit management corporations, the managed care industry, and the political and lobbying
 ...
 ```
+
 
 `grep -l`
 ---
@@ -185,6 +182,7 @@ plos/pmed.0020149.txt
 ```
 
 `grep -L`
+---
 
 * `grep -L` is the opposite of `grep -l`. It prints out all files that do NOT have the specified input within it. It will only print out file names, not text within them.
 * This only works on files and not directories!
@@ -211,6 +209,7 @@ plos/pmed.0020272.txt
 Here, all 3 of them did not have the word "hello" inside of them.
 
 **Sourced Used**
+---
 
 [Linux grep documentation](https://man7.org/linux/man-pages/man1/grep.1.html)
 
