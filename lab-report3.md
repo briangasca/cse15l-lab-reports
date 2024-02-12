@@ -97,7 +97,7 @@ Here, we are making an array `newArray` have a starting value of the ending elem
 * `grep -c` is supposed to print the count of matching items for an input file you put into it.
 * This only works on files and not directories!
 
->Examples:
+Examples:
 >1:
 > If we use `grep -c` in the `/technical/` directory, we can count how many times a word appears in a text file. For example,
 >`grep -c the plos/journal.pbio.0020001.txt` will print out `147`, which is how many times the word "the" was written in that text file.
@@ -131,7 +131,7 @@ plos/pmed.0020272.txt:40
 * `grep -r` recursively searches through directories and their subdirectories for a line that matches a given input. It prints out the lines where it finds the given input.
 * This works on both files and directories!
 
-> Examples:
+Examples:
 > 1:
 >  If we use `grep -r` to search for the word "the" in the `plos/` directory, we can write it as `grep -r "the" plos/`. This will search every file within the `plos/` directory and print out the line where it's found.
 ```
@@ -160,7 +160,7 @@ plos/pmed.0020281.txt:        benefit management corporations, the managed care 
 * `grep -l` displays the names of the files that have at least one line of a given input that I gave the command. It prints out the files it found.
 * This only works on files and not directories!
 
-> Examples:
+Examples:
 > 1:
 > If we use `grep -l` to find `.txt` files that contain the word "you" in them within the `plos/` directory, we can do that with this here. It will only print the file name where the input is located.
 ```
@@ -187,7 +187,7 @@ plos/pmed.0020149.txt
 * `grep -L` is the opposite of `grep -l`. It prints out all files that do NOT have the specified input within it. It will only print out file names, not text within them.
 * This only works on files and not directories!
 
-> Examples:
+Examples:
 > 1:
 > If we use `grep -L` to find all `.txt` files not containing the word "hello" in them within the `plos/` directory, it will return all the files that DO NOT have "hello" inside them.
 ```
