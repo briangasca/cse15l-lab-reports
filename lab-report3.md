@@ -55,6 +55,10 @@ then it's going to be the same. There's not really any reversing going on here s
 With a failure inducing input like `{3,4,5}`, we get a JUnit test failure with the message: `Expected [5] but was [0]`. This happens since
 the returned value of `ArrayExamples.reversed(input1));` is actually `{0,0,0}`, since the `newArray` variabled in `reversed` method has the same length, but is not copying the same elements.
 
+![Symptom-Image-Pass](https://raw.githubusercontent.com/briangasca/cse15l-lab-reports/main/images/Screenshot%202024-02-13%20at%202.49.42%20PM.png)
+
+This test passes since all the `reversed` method is doing is returning an array with length equal to that of `arr`. In this case, the length is `0`, so the reversing doesn't even matter since there's no elements to reverse.
+
 **Fixed Code**
 
 - In order to fix this, we must make sure `newArray` is getting filled with `arr`'s existing elements in a backward order.
