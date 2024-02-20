@@ -217,6 +217,7 @@ Here, all 3 of them did not have the word "hello" inside of them.
 
 [Linux grep documentation](https://man7.org/linux/man-pages/man1/grep.1.html)
 
+This source provided me with the command arguments and I used them in terminal to see what they do. This is my sole, online source.
 
 
 
