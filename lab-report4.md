@@ -11,6 +11,8 @@ I typed: `s` `s` `h` `<space>`  `b` `g` `a` `s` `c` `a` `@` `i` `e` `n` `g` `6` 
 
 ![Logging into ieng6](https://i.imgur.com/6Lxn12x.png)
 
+- For this step, I ran the command `ssh` into the server `bgasca@ieng6-201.ucsd.edu` to connect my terminal to the remote ieng6 server. 
+
 ## Step 5: 
 
 - **Clone the forked repository from Github account using SSH URL**
@@ -21,6 +23,8 @@ The SSH URL was on my clipboard, so I simply used the paste command.
 
 ![Step 5](https://i.imgur.com/mmhLeZ1.png)
 
+- For this step, I ran the command `git clone` to clone the repository into `ieng6`. This let me edit the repository within ieng6 so I could do my repository editing remotely.
+
 ## Step 6:
 
 - **Run tests and demonstrate that they fail**
@@ -29,6 +33,8 @@ First I typed: `l` `s` `<enter>` to view the files and directories, then i typed
 I typed `l` `s` `<enter>` again to view files and directories, then typed `b` `a` `s` `h` `<space>`  `t` `e` `s` `t` `.` `s` `h` `<enter>` to run the `JUnit` test.
 
 ![](https://i.imgur.com/ejZDyzw.png)
+
+- For this step, I used the `ls` commands to see files that I could traverse to. I used `cd` to change directories, and `bash` to run a script that would run the JUnit tests.
 
 ## Step 7:
 
@@ -54,6 +60,8 @@ Finally, I exit and save by typing `:` `w` `q`
 
 ![](https://i.imgur.com/npWPZNv.png)
 
+- For this step, I used the `vim` command to open the file `ListExamples.java` inside the `vim` code editor so I could change the code inside the file. The effect of the keypress `j` here was a scrolling effect, then `h` as to turn my cursor to the left, `i` was to instert characters, and `<esc>` was to exit out of the insertion. Finally, `:wq` was used to save and quit the vim editor.
+
 ## Step 8:
 
 - **Run the tests demonstrating that they now succeed.**
@@ -65,6 +73,8 @@ I typed `<up>` `<up>` `<up>` to get back to `bash test.sh`
 Then i pressed `<enter>`
 
 ![](https://i.imgur.com/S71INaG.png)
+
+- For this step, using `<up>` each time would go back one command I used previously. In this case, `bash test.sh` was 3 away so I had to press it twice.
 
 ## Step 9:
 
@@ -79,3 +89,5 @@ Then i typed `g` `i` `t` `<space>`  `c` `o` `m` `m` `i` `t` `<space>`  `-` `m` `
 Finally, `g` `i` `t` `<space>`  `p` `u` `s` `h` to push to the repository.
 
 ![](https://i.imgur.com/EI3mAnT.png)
+
+- For this step, `git add` is used to add changes to be commited, `git commit` solidifes those changes, and `git push` pushes those changes to the repository.
