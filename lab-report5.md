@@ -15,9 +15,10 @@ Here is my method:
 
 Also, `test.sh` is a script that runs JUnit. It is comprised of the commands:
 
-`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+```
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore Tester
-`
+```
 
 # TA:
 
