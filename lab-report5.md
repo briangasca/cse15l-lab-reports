@@ -28,7 +28,7 @@ Excellent question! What do you think would be the leading cause to an element a
 
 I changed the if-statement from `if(i <= list1.size() - 1)` to `if(i <= list1.size())`, however that resulted in an index out of bounds error.
 
-![](https://imgur.com/JRZqf2c)
+![](https://i.imgur.com/JRZqf2c.png)
 
 I reset everything and changed it back to the original, then I changed the for loops condition from `i < total_size - 1` to `i < total_size` and it worked!
 
