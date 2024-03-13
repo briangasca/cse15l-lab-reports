@@ -1,7 +1,7 @@
-## Lab Report 5
+# Lab Report 5
 ---
 
-# Student:
+#### Student:
 
 Hello, my program that is supposed to merge two lists into one is not merging the last element of the 2nd list.
 
@@ -20,11 +20,11 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore Tester
 ```
 
-# TA:
+#### TA:
 
 Excellent question! What do you think would be the leading cause to an element at the end of a list not being accessed, the for loop or the if-statement? I'd suggest changing one of the conditions to make sure it is accessed.
 
-# Student:
+#### Student:
 
 I changed the if-statement from `if(i <= list1.size() - 1)` to `if(i <= list1.size())`, however that resulted in an index out of bounds error.
 
@@ -36,7 +36,7 @@ I reset everything and changed it back to the original, then I changed the for l
 
 It seems that the bug was that the for loop was stopping right before accessing the last element of `list2` because of the `total_size - 1` in the for loop, so it was not added. Now, it can access every index.
 
-# Summary:
+## Summary:
 
 
 
